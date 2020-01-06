@@ -383,7 +383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd72fd78d59545c45947db6e593f19da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myWake: {fileID: 0}
   myNav: {fileID: 0}
+  particlesStopped: 1
 --- !u!1 &7405364921944414261
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360955666219170019, guid: 4fff4c270196b914b911f6a4e1ee1f20,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fff4c270196b914b911f6a4e1ee1f20, type: 3}
