@@ -50,7 +50,7 @@ public class Attack : MonoBehaviour
 
     private void EndAttack()
     {
-        attackVolume.SetActive(false);
+        //attackVolume.SetActive(false);
         attackAnim.SetBool("isChomp", false);
         attackParticles.Stop();
     }
