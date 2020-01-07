@@ -274,8 +274,8 @@ Transform:
   m_Children:
   - {fileID: 1964574914065936111}
   - {fileID: 1778996752}
-  - {fileID: 2948624821188565979}
   - {fileID: 605510786939439193}
+  - {fileID: 2472835937108433408}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -417,7 +417,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1964574915074215100}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &908258702734760684
 MeshFilter:
@@ -478,7 +478,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1472295228270313832
+--- !u!1001 &2221538214001049779
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -493,7 +493,7 @@ PrefabInstance:
     - target: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
@@ -523,7 +523,7 @@ PrefabInstance:
     - target: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
@@ -543,28 +543,13 @@ PrefabInstance:
     - target: {fileID: 4360955665969453744, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
       propertyPath: m_Name
-      value: Wakee_Blob
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360955666219170017, guid: 4fff4c270196b914b911f6a4e1ee1f20,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360955666219170017, guid: 4fff4c270196b914b911f6a4e1ee1f20,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360955666219170019, guid: 4fff4c270196b914b911f6a4e1ee1f20,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 8
+      value: Wake_Blob
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fff4c270196b914b911f6a4e1ee1f20, type: 3}
---- !u!4 &2948624821188565979 stripped
+--- !u!4 &2472835937108433408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
     type: 3}
-  m_PrefabInstance: {fileID: 1472295228270313832}
+  m_PrefabInstance: {fileID: 2221538214001049779}
   m_PrefabAsset: {fileID: 0}

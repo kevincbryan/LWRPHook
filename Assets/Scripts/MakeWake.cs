@@ -63,7 +63,7 @@ public class MakeWake : MonoBehaviour
                     if (playerController.isMoving == true)
                     {
                         //Debug.Log ("RB Velocity is " + Vector3.Distance (rb.velocity, still));
-                        myWake.Play();
+                        myWake.Play(true);
                         particlesStopped = false;
                         //Debug.Log("Player Wake should start");
                     }
@@ -75,7 +75,7 @@ public class MakeWake : MonoBehaviour
                     if (myNav.velocity != stopped)
                     {
                         
-                        myWake.Play();
+                        myWake.Play(true);
                         particlesStopped = false;
                         Debug.Log("Not stopped particles should start");
                     }
@@ -88,14 +88,14 @@ public class MakeWake : MonoBehaviour
         {
             if (myInWater.inWater == false || myInWater.aboveWater == false)
             {
-                myWake.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+                myWake.Stop(true, ParticleSystemStopBehavior.StopEmitting);
                 particlesStopped = true;
             }
             else if (playerController)
             {
                 if (playerController.isMoving == false)
                 {
-                    myWake.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+                    myWake.Stop(true, ParticleSystemStopBehavior.StopEmitting);
                     Debug.Log("Player Wake should stop");
                     particlesStopped = true;
                 }
@@ -105,7 +105,7 @@ public class MakeWake : MonoBehaviour
                 Vector3 stopped = new Vector3(0, 0, 0);
                 if (myNav.velocity == stopped)
                 {
-                    myWake.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+                    myWake.Stop(true, ParticleSystemStopBehavior.StopEmitting);
                     particlesStopped = true;
                 }
             }
