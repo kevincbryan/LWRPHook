@@ -9,6 +9,7 @@ public class NPCMove : MonoBehaviour
     public GameObject target;
     public float stoppingDistance = 0f;
     private float turningDistance;
+    private bool movePaused = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +30,25 @@ public class NPCMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        nav.destination = target.transform.position;
-
-        float distance = Vector3.Distance(transform.position, target.transform.position);
-        if (distance <= turningDistance)
+        if (movePaused == false)
         {
-            Quaternion lookRotation = Quaternion.LookRotation(target.transform.position, -transform.position).normalized;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime * nav.angularSpeed);
-        }
+            nav.destination = target.transform.position;
 
+        }
+            float distance = Vector3.Distance(transform.position, target.transform.position);
+            if (distance <= turningDistance)
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(target.transform.position, -transform.position).normalized;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime * nav.angularSpeed);
+            }
+        
+      
+
+    }
+
+    public void PauseMovement(bool paused)
+    {
+        movePaused = paused;
+        Debug.Log("Is movement paused ? " + movePaused);
     }
 }

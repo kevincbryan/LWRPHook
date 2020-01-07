@@ -46,6 +46,8 @@ public class DelayDamage : MonoBehaviour
                 hpToDamage.TakeDamage(damage);
             }
         }
+
+        gameObject.SetActive(false);
     }
 
 }
