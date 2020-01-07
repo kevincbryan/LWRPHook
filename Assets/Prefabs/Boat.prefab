@@ -218,7 +218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1fdc2765b8e7d2d479c20a5705471fa3, type: 2}
+  - {fileID: 2100000, guid: 7871aef72de256e48ae87211b5ffd1cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -485,6 +485,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1964574915074215100}
     m_Modifications:
+    - target: {fileID: 4360955665969453744, guid: 4fff4c270196b914b911f6a4e1ee1f20,
+        type: 3}
+      propertyPath: m_Name
+      value: Wake_Blob
+      objectReference: {fileID: 0}
     - target: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -539,11 +544,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360955665969453744, guid: 4fff4c270196b914b911f6a4e1ee1f20,
-        type: 3}
-      propertyPath: m_Name
-      value: Wake_Blob
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fff4c270196b914b911f6a4e1ee1f20, type: 3}
