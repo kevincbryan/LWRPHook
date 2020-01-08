@@ -9,6 +9,7 @@ TagManager:
   - AboveWater
   - Enemy
   - Boat
+  - UIHP
   layers:
   - Default
   - TransparentFX
