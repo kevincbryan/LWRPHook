@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LazyRiver.unity
+    guid: 021d2bfb99995664ca0eb696e4d3ded0
   m_configObjects: {}

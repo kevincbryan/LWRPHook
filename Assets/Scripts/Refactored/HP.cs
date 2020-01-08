@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HP : MonoBehaviour
 {
@@ -25,7 +26,16 @@ public class HP : MonoBehaviour
         hp -= damage;
         if (hp <= 0)
         {
-            Destroy(gameObject);
+            if (gameObject.tag == "Player")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+
+            
         }
     }
 }

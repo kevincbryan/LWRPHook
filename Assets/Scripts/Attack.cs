@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Attack : MonoBehaviour
 {
-    public int damage;
+    //public int damage;
     public float attackDelay = .5f;
     private float timeUntilAttack = .5f;    
     public float attackDistance = 5f;
