@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NPCHPBar : MonoBehaviour
 {
 
-    public HP playerHP;
+    public HP npcHP;
     public Image healthbar;
     private float healthPercentage;
 
@@ -19,7 +19,7 @@ public class NPCHPBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthPercentage = (float)playerHP.hp / (float)playerHP.hpMax;
+        healthPercentage = (float)npcHP.hp / (float)npcHP.hpMax;
         healthbar.fillAmount = healthPercentage;
     }
 }
