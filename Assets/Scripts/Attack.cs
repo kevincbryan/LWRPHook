@@ -52,9 +52,16 @@ public class Attack : MonoBehaviour
 
     private void MakeAttack ()
     {
-        Debug.Log("MakeAttack is running");
+        //Debug.Log("MakeAttack is running");
+
         attackVolume.SetActive(true);
-        attackAnim.SetBool("isChomp", true);
+
+        if (attackAnim)
+        {
+            attackAnim.SetBool("isChomp", true);
+        }
+
+        
 
         if (attackParticles)
         {
@@ -68,7 +75,11 @@ public class Attack : MonoBehaviour
     private void EndAttack()
     {
         //attackVolume.SetActive(false);
-        attackAnim.SetBool("isChomp", false);
+        if (attackAnim)
+        {
+            attackAnim.SetBool("isChomp", false);
+        }
+       
         if (attackParticles)
         {
             attackParticles.Stop();

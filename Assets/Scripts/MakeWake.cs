@@ -70,14 +70,14 @@ public class MakeWake : MonoBehaviour
                 }
                 if (myNav)
                 {
-                    Debug.Log("Checking for movement, and Nav is confirmed");
+                    //Debug.Log("Checking for movement, and Nav is confirmed");
                     
                     if (myNav.velocity != stopped)
                     {
                         
                         myWake.Play(true);
                         particlesStopped = false;
-                        Debug.Log("Not stopped particles should start");
+                       // Debug.Log("Not stopped particles should start");
                     }
                 }
                 
@@ -96,7 +96,7 @@ public class MakeWake : MonoBehaviour
                 if (playerController.isMoving == false)
                 {
                     myWake.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-                    Debug.Log("Player Wake should stop");
+                    //Debug.Log("Player Wake should stop");
                     particlesStopped = true;
                 }
             }

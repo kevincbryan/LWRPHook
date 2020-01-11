@@ -49,6 +49,6 @@ public class NPCMove : MonoBehaviour
     public void PauseMovement(bool paused)
     {
         movePaused = paused;
-        Debug.Log("Is movement paused ? " + movePaused);
+        //Debug.Log("Is movement paused ? " + movePaused);
     }
 }
