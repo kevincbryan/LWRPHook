@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_RiverShader
+  m_Shader: {fileID: -6465566751694194690, guid: 36425219c87751145bbb91666baf4c82,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_73F766A:
+        m_Texture: {fileID: 2800000, guid: 3e401ef6c20bb9a4486c79c6b3b797cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _waveNormalA:
+        m_Texture: {fileID: 2800000, guid: a3f079defc3a0724a8148f4fc39e6e4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1AC60710: 1
+    - Vector1_1D951732: 0.5
+    - Vector1_53E62951: 1.5
+    - Vector1_B5FCA97D: 0.5
+    - Vector1_DA413FD6: 0
+    - _nrmMoveSpeed: 2
+    - _nrmTile: 0.04
+    m_Colors:
+    - Color_213A1C88: {r: 0.24430397, g: 0.5364115, b: 0.8490566, a: 0}
+    - Color_339078F5: {r: 0.13309807, g: 0.11854748, b: 0.6792453, a: 0}

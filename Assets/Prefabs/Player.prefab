@@ -47,7 +47,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468800662787072777}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -340,6 +340,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468800664312589218}
     m_Modifications:
+    - target: {fileID: 4360955665969453744, guid: 4fff4c270196b914b911f6a4e1ee1f20,
+        type: 3}
+      propertyPath: m_Name
+      value: Wake_Blob
+      objectReference: {fileID: 0}
     - target: {fileID: 4360955665969453747, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -409,11 +414,6 @@ PrefabInstance:
         type: 3}
       propertyPath: ShapeModule.m_Scale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360955665969453744, guid: 4fff4c270196b914b911f6a4e1ee1f20,
-        type: 3}
-      propertyPath: m_Name
-      value: Wake_Blob
       objectReference: {fileID: 0}
     - target: {fileID: 2370099294737412548, guid: 4fff4c270196b914b911f6a4e1ee1f20,
         type: 3}
@@ -521,6 +521,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468800664312589218}
     m_Modifications:
+    - target: {fileID: 8295695234424852582, guid: 6f990bf5eb7b2fc4f83500b96c68f546,
+        type: 3}
+      propertyPath: m_Name
+      value: SwordBase
+      objectReference: {fileID: 0}
     - target: {fileID: 8295695234424852583, guid: 6f990bf5eb7b2fc4f83500b96c68f546,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -576,11 +581,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45.057003
       objectReference: {fileID: 0}
-    - target: {fileID: 8295695234424852582, guid: 6f990bf5eb7b2fc4f83500b96c68f546,
-        type: 3}
-      propertyPath: m_Name
-      value: SwordBase
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f990bf5eb7b2fc4f83500b96c68f546, type: 3}
 --- !u!4 &335363159 stripped
@@ -614,6 +614,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468800664079918328}
     m_Modifications:
+    - target: {fileID: 845700845083463980, guid: 0e16f248635c86b4289dff6f50494c1e,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 1898299471683921412, guid: 0e16f248635c86b4289dff6f50494c1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -668,11 +673,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 845700845083463980, guid: 0e16f248635c86b4289dff6f50494c1e,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e16f248635c86b4289dff6f50494c1e, type: 3}
