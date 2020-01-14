@@ -7,6 +7,7 @@ public class HP : MonoBehaviour
 {
     public int hp;
     public int hpMax;
+    public Animator transition;
 
 
     // Start is called before the first frame update
@@ -28,7 +29,7 @@ public class HP : MonoBehaviour
         {
             if (gameObject.tag == "Player")
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                LoadThisLevel();
             }
             else
             {
@@ -37,5 +38,22 @@ public class HP : MonoBehaviour
 
             
         }
+    }
+
+
+    public void LoadThisLevel ()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
+    }
+
+
+    IEnumerator LoadLevel (int levelIndex)
+    {
+        if (transition) transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(levelIndex);
+
     }
 }

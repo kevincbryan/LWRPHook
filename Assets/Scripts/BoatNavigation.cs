@@ -7,7 +7,7 @@ public class BoatNavigation : MonoBehaviour
 {
     public NavMeshAgent nav;
     public Transform target;
-
+    private bool isStopped = false;
 
 
     // Start is called before the first frame update
@@ -25,14 +25,24 @@ public class BoatNavigation : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+
+       if (isStopped == false)
         {
-            nav.destination = target.transform.position;
+            if (other.tag == "Player")
+            {
+                nav.destination = target.transform.position;
+            }
         }
+       
     }
 
     private void OnTriggerExit(Collider other)
     {
         nav.destination = transform.position;
+    }
+
+    public void StopMovement(bool paused)
+    {
+        isStopped = paused;
     }
 }
