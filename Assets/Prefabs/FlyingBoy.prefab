@@ -135,7 +135,7 @@ PrefabInstance:
         type: 3}
       propertyPath: nav
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8049921022051127860}
     - target: {fileID: 6708460731146339888, guid: 090630e937017af4294f8e73041a0798,
         type: 3}
       propertyPath: myNav

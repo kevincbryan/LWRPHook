@@ -23,7 +23,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
-        nav = gameObject.GetComponent<NavMeshAgent>();
+        //nav = gameObject.GetComponent<NavMeshAgent>();
         myMover = gameObject.GetComponent<NPCMove>();
         timeUntilAttack = attackDelay;
         //Debug.Log("Nav is found : " + nav);
